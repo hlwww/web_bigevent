@@ -37,7 +37,7 @@ function renderAvatar(userinfo) {
     console.log(name);
     $('#welcome').html('欢迎&nbsp;&nbsp' + name);
     if (userinfo.user_pic) {
-        $('.layui-nav-img').attr('src', user_pic).show();
+        $('.layui-nav-img').attr('src', userinfo.user_pic).show();
         $('.text-avatar').hide();
     } else {
         $('.layui-nav-img').hide();
